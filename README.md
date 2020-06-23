@@ -79,6 +79,10 @@ free Heroku dyno?
 
 I mean, it worked for me, so I can't really ask for much else.
 
+UPDATE: No, it kind of worked. Certbot validated my site and gave me the certificate, but Heroku won't accept
+it, citing SNI SSL is only available for Hobby or Professional dynos (paying customers). I don't even know what that
+means, but I'm upset haha.
+
 # Acknowledgements
 
 https://medium.com/should-designers-code/how-to-set-up-ssl-with-lets-encrypt-on-heroku-for-free-266c185630db
