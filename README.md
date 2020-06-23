@@ -22,6 +22,14 @@ technically do this, but I decided not to. A method to run the command line prog
 LetsEncrypt (really, CertBot) where your server is. It asks "Okay, if it's really your server, put this weird string in
 this weird place, and when you've done that we'll talk."
 
+Okay, let's do that. Here's how, with installation of `certbot` assuming an aptitude package manager (Debian/Ubuntu).
+Run this on your local computer.
+
+```
+sudo apt-get install certbot
+sudo certbot certonly --manual
+``` 
+
 You get something that looks like this:
 
 ```
@@ -69,7 +77,8 @@ After setting those and making sure you're logged into the Heroku CLI, you can r
 This requires you to take your server offline, but if you're not okay with that, why are you cheaping out on a
 free Heroku dyno?
 
+I mean, it worked for me, so I can't really ask for much else.
+
 # Acknowledgements
 
 https://medium.com/should-designers-code/how-to-set-up-ssl-with-lets-encrypt-on-heroku-for-free-266c185630db
-
